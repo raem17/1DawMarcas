@@ -1,0 +1,14 @@
+/* p hijos de article */
+article > p {
+    text-align: center;
+}
+
+/* p hermanos de h2 */
+h2 ~ p {
+    text-align: center;
+}
+
+/* todos los p descendientes de un div, más usado*/
+div  p {
+    text-align: center;
+}

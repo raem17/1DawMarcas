@@ -1,0 +1,19 @@
+.bigger {
+    color: red;
+}
+
+h2 {
+    color: violet;
+}
+
+section {
+    border: 1px solid salmon;
+}
+
+p {
+    background: lightgray
+}
+
+.bigger {
+    color: blue;
+}

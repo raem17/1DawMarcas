@@ -1,0 +1,23 @@
+/* Estilos a enlaces no visitados */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Enlaces visitados */
+a:visited {
+    color: gold;
+}
+
+/* Estilos cuando el ratón pasa por el enlace */
+a:hover {
+    background: orange;
+    color: white;
+}
+
+/* Estado del enlace cuando hagamos click sobre él */
+a:active {
+    text-decoration: none;
+    background: darkgreen;
+    color: red;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@keyframes girarImagen {
+    0% {transform: rotate(0deg) scale(1.7);}
+    25% {transform: rotate(90deg) scale(1);}
+    50% {transform: rotate(180deg) scale(0.5);}
+    100% {transform: rotate(360deg) scale(1.7);}
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #F2D2E1;
+}
+
+header {
+    background-image: url(./cabecera2.jpg);
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 3px 20px 0px #3a3a3a;
+    background-color: #CFC6BC;
+    text-align: center;
+}
+
+h1 {
+    padding: 0.25em;
+    font-size: 1.5rem;
+    color: #603414;
+    text-transform: uppercase;
+    background-color: rgba(222, 233, 237, 0.7);
+}
+
+main section {
+    margin: 0 auto;
+    width: 50%;
+    box-shadow: 0px 3px 20px 0px #3a3a3a;
+    background-color: whitesmoke;
+}
+
+h2 {
+    font-size: 1rem;
+    padding: 1em 0em;
+    text-align: center;
+    color: #603414;
+    text-transform: uppercase;
+}
+
+article {
+    padding: 0em 2em;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    text-align: justify;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0px 3px 20px 0px #3a3a3a;
+}
+
+footer {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.75em 0;
+    font-size: 0.7rem;
+    background-color: #373134;
+    color: #f5f5f5;
+    text-align: center;
+    box-shadow: 0px 3px 20px 0px #3a3a3a;
+}
+
+a[href *= "chocolate"], a[href *= "chocolate"]:visited{
+    color: red;
+}
+
+a[href ^= "http:"]:hover {
+    font-size: 200%;
+}
+
+/* A partir de aquí uso clases que he añadido en el html*/
+
+/* imagen 1 */
+.art1 > img {
+    transform: rotate(180deg);
+}
+
+/* imagen 2 */
+.art2 > img{
+    transition: 2.6s ease all;
+}
+
+.art2 > img:hover{
+    transform: scale(0.6);
+}
+
+/* imagen 3 */
+.art3 > img {
+    animation: girarImagen 4s linear infinite;
+    margin-bottom: 0;
+}

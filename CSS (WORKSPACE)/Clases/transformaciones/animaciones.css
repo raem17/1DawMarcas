@@ -1,0 +1,27 @@
+@keyframes colors {
+    /* from {background: #A63446;}
+    to {background: #0C6291;} */
+    0%{background-color: #411035;}
+    25%{background-color: #511730;}
+    25%{background-color: #511730;}
+    50%{background-color: #8E443D;}
+    75%{background-color: #CB9173;}
+    100%{background-color: #E0D68A;}
+}
+
+@keyframes movimiento {
+    0% {transform: translate(0px);}
+    50% {transform: translate(500px);}
+    100% {transform: translate(0px);}
+}
+
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: #320A28;
+    /* animation-name: movimiento;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    animation:  movimiento 10s ease infinite, colors 10s ease infinite;
+}

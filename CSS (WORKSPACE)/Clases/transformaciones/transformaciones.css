@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja {
+    background-color: #ffaa5a;
+    width: 200px;
+    height: 200px;
+    /* Cosas que podemos hacer con transform 
+    - Trasladar elementos
+    - Escalar elementos
+    - Rotar elementos
+    - Sesgar elementos
+    */
+    /* transform: translate(200px, 50px); */
+    /* transform: scale(6.1, 5.1); */
+    /* transform: rotate(45deg); */
+    /* transform: skew(20deg, 0deg); */
+    /* el shorthand va separado por espacio en blanco */
+    transform: rotate(10deg) scale(2.2) translateX(200px);
+}

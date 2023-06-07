@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+#myMain {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+#finalForm {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Div padre de todos los elementos que están por encima del input radio TyC */
+div.top {
+    padding: 1rem;
+}
+
+div.top > input:first-child {
+    margin-bottom: 1.5rem;
+}
+
+div.top > input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px #cccccc solid;
+    padding: 0.7rem;
+}
+
+div.top > input:focus {
+    border: 2px #246eb9 solid;
+    outline: none;
+}
+
+/* Div padre de input y label pertinentes a hombre/mujer */
+div.radio-group {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.1rem;
+    text-align: center;
+}
+
+/* Input radio hombre/mujer */
+div.radio-group > input[name="sexo"]{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+div.radio-group > label {
+    cursor: pointer;
+    background-color: #fdd9b2;
+    color: white;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+div.radio-group > input[type="radio"]:checked + label{
+    background-color: #58ba83;
+    transition: all .3s ease-out;
+}
+
+/* Div de términos y condiciones para centrado perfecto */
+div.TyC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+div.TyC > input {
+    margin-right: 0.5rem;
+}
+
+div.TyC > label[for="TyC"] {
+    font-size: 0.85rem;
+}
+
+/* Input registrarse */
+.btn {
+    margin-top: 0.5rem;
+    color: white;
+    background-color: #246eb9;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .2s ease-out;
+    width: 100%;
+    padding: 0.7rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #18538f;
+    transition: all .2s ease-out;
+}
+
+ul#ulList {
+    color: white;
+    background-color: #ce1818;
+    padding: 0.85rem;
+    margin: 1rem;
+    border-radius: 2px;
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+}
+
+ul#ulList > li {
+    margin-left: 1rem;
+}
+
+.noError {
+    display: none;
+}

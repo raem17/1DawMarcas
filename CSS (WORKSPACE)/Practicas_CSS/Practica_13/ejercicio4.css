@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+table, tr, th, td {
+    border:1px solid #000; border-collapse:collapse; padding:5px;
+}
+
+h1#titulo {
+    color: teal;
+}
+
+p > strong {
+    color: red;
+}
+
+p > span.destacado {
+    color: orange;
+}
+
+h2#subtitulo {
+    color: blue;
+}
+
+p > a {
+    color: red;
+}
+
+p > a > em {
+    color: blue;
+}
+
+p > span.especial{
+    color: purple;
+}
+
+table[summary = "Descripción de la tabla y su contenido"] > caption {
+    color: blue;
+}
+
+tr > th.especial {
+    color: orange;
+}
+
+tr > td {
+    color: green;
+}
+
+tr > td > strong {
+    color: orange;
+}
+
+tr > th {
+    color: red;
+}
+
+div#adicional {
+    color: olive;
+}
+
+div#adicional > p > span#especial {
+    color: fuchsia;
+}
+
+div#adicional > p > a {
+    color: green;
+}
+
+a:hover {
+    background-color: grey;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: black;
+    color: gold;
+}

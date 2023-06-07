@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Description para SEO -->
+    <meta name="description" content="Descripción de mi web, 150 caracteres no más">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Recursos/favicon-kiwi.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Recursos/style.css">
+    <!-- Título -->
+    <title>Sobre nosotros</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="textCenter">
+
+        <h1>Sobre nosotros</h1>
+        <p>Conoce un poco más sobre nuestra agencia</p>
+        <div><img src="./Recursos/img/about-us.jpg" alt="Tres_personas_en_una_montaña_mirando_la_puesta_del_sol_al_atardecer" title="Tres_personas_en_una_montaña_mirando_la_puesta_del_sol_al_atardecer" width="640px" height="427px"></div>
+
+        <!-- Nav -->
+        <nav class="mainNav">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./services.html">Servicios</a></li>
+                <li><a href="./about.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main class="spaceTop">
+
+        <!-- Article 1 -->
+        <article class="contentCenter">
+            <h2>Nuestro equipo</h2>
+            <p>Aquí puedes saber quién hay detrás de Kiwi Salvaje</p>
+
+            <!-- Section 1 -->
+            <section>
+                <h2>Laura</h2>
+                <div>   
+                    <img class="roundedShadow" src="./Recursos/img/laura.jpg" alt="Laura" title="Laura" width="640px" height="424px">
+                    <p>Apasionada de la naturaleza y los animales.</p>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section>
+                <h2>Juan</h2>
+                <div>   
+                    <img class="roundedShadow" src="./Recursos/img/juan.jpg" alt="Juan" title="Juan" width="640px" height="424px">
+                    <p>Se conoce cada rincón de las ciudades principales.</p>
+                </div>
+            </section>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="contentCenter">
+            <h2>Contacta con nosotros</h2>
+
+            <!-- Form -->
+            <form action="#" method="post" name="contactForm" class="styledForm">
+
+                <!-- input text -->
+                <div>
+                    <label for="firstname">Nombre:</label> <br>
+                    <input type="text" name="firstname" id="firstname" placeholder="Nombre" autocomplete="off" required size="54">
+                </div>
+
+                <!-- input email -->
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="nombre@gmail.com" autocomplete="off" required size="54">
+                </div>
+
+                <br>
+                <!-- Botón enviar -->
+                <button type="submit">Enviar</button>
+
+            </form>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="textCenter">&copy;Agencia Kiwi Salvaje</p>
+    </footer>
+
+</body>
+</html>

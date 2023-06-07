@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Recursos/favicon.ico" type="image/x-icon">
+    <!-- Título -->
+    <title>HTML | Tablas</title>
+</head>
+<body>
+    
+    <!-- Creamos una tabla -->
+    <table>
+
+        <tr> <!-- tr = Crear fila -->
+            <th>Fruta</th> <!-- tr = Crear columna (encabezado) -->
+            <th>Color</th>
+            <th>Precio</th>
+        </tr>
+
+        <tr>
+            <td>Platano 🍌</td> <!-- tr = Crear columna -->
+            <td>Amarillo</td>
+            <td>1€</td>
+        </tr>
+
+        <tr>
+            <td>Fresa 🍓</td>
+            <td>Rojo</td>
+            <td>2€</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <!-- Otra tabla utilizando colspan y rowsapn -->
+    <table border="1">
+
+        <tr>
+            <th>Productos</th>
+            <th colspan="2">Cantidad</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Tomate 🍅</td>
+            <td>4</td>
+            <td>0.89</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>0.48</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

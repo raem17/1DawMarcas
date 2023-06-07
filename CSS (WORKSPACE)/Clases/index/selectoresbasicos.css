@@ -1,0 +1,51 @@
+/* seleccionamos los parrafos */
+/* selectores de elementos */
+h1 {
+    color: lightsalmon;
+}
+
+p, h2 {
+    color: mediumspringgreen;
+}
+
+/* selector de clases */
+.bigger {
+    font-size: 40px;
+}
+
+/* selector por id */
+#favorito {
+    color: gold;
+}
+
+/* selector de atributos */
+a[href="http://google.es"] {
+    color: crimson;
+    font-size: 60px;
+}
+
+a[class] {
+    color: greenyellow;
+    font-size: 60px;
+} 
+
+/* selector pseudoclase hover */
+h2:hover {
+    color: red;
+}
+
+/* pseudoelemento para añadir html */
+/* h2::after {
+    content: " LUNES";
+} */
+
+/* Podemos combinar pseudoclases con combinadores */
+/* h2:hover + p {
+    background-color: grey;
+} */
+
+p:hover > strong{
+    background-color: violet;
+    color: white;
+    transition: 0.5s;
+}

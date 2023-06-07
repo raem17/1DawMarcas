@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Recursos/favicon.ico" type="image/x-icon">
+    <title>HTML | Formularios</title>
+</head>
+
+<body>
+
+    <!-- Formulario -->
+    <form action="https://ptsv2.com/t/cyapj-1664780408/post" method="post">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <!-- input text; required es un campo requerido -->
+            <div>
+                <label for="username">Nombre:</label>
+                <input type="text" name="username" id="username" placeholder="Nombre de usuario" required
+                    autocomplete="off">
+            </div>
+
+            <!-- input number -->
+            <div>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" name="cantidad" id="cantidad" min="1" max="5">
+            </div>
+
+            <!-- input teléfono -->
+            <div>
+                <label for="tlf">Teléfono:</label>
+                <input type="tel" name="tlf" id="tlf" pattern="[0-9]{9}">
+            </div>
+
+            <!-- input password -->
+            <div>
+                <label for="pw">Contraseña:</label>
+                <input type="password" name="password" id="pw">
+            </div>
+
+            <!-- input email -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <!-- select desplegable -->
+            <div>
+                <label for="paises">Países</label>
+                <select name="paises" id="paises">
+                    <option value="spain">España</option>
+                    <option value="arg">Argentina</option>
+                    <option value="brz">Brasil</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Pokemons</legend>
+
+            <input type="checkbox" name="pokemon" id="pokemon 1" value="Cinderace">
+            <label for="pokemon 1">Cinderace</label>
+
+            <input type="checkbox" name="pokemon" id="pokemon 2" value="Lucario">
+            <label for="pokemon 2">Lucario</label>
+
+            <input type="checkbox" name="pokemon" id="pokemon 3" value="Garchomp">
+            <label for="pokemon 3">Garchomp</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dreamteam de Madrid</legend>
+
+            <input type="radio" name="equipo" id="real_madrid" value="Real Madrid">
+            <label for="real_madrid">Real Madrid</label>
+
+            <input type="radio" name="equipo" id="atleti" value="Atlético de Madrid">
+            <label for="atleti">Atlético de Madrid</label>
+
+            <input type="radio" name="equipo" id="rayito" value="Rayo Vallecano">
+            <label for="rayito">Rayo Vallecano</label>
+
+        </fieldset>
+
+        <br>
+        <!-- Botón enviar -->
+        <button submit>Enviar</button>
+
+    </form>
+
+</body>
+
+</html>

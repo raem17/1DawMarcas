@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    border: 1px solid red;
+    background-image: url(./bosque.jpg);
+    /* Usar mejor padding para evitar complicarnos con anchos y altos */
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-color: #808080a2;
+    display: inline;
+    padding: 1rem;
+}

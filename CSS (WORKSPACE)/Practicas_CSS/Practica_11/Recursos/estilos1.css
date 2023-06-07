@@ -1,0 +1,13 @@
+h1 {
+    Text-transform: uppercase;
+}
+
+p {
+    font-size: 20px;
+    color: Green;
+}
+
+.ciudad {
+    font-style: italic;
+    font-weight: bolder;
+}

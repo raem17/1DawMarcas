@@ -1,0 +1,18 @@
+/* Id > Class > Elemento */
+/* ICE 🧊 */
+/*  */
+
+p {
+    color: red;
+    /* Con esta propiedad ganamos a todos */
+    /* !important  */
+    font-size: 20px;
+}
+
+.bigger {
+    color: blue;
+}
+
+#special {
+    color: gold;
+}

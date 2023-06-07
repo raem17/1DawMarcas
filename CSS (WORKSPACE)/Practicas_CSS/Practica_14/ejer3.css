@@ -1,0 +1,10 @@
+div {
+    color: black;
+    background-color: #ffff00;
+
+}
+
+div > div {
+    color: blue;
+    background-color: rgb(255, 192, 203);
+}

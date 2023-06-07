@@ -1,0 +1,22 @@
+/* px: unidad absoluta */
+
+p {
+    /* font-size: 32px; */
+    border: 1px solid red;
+}
+
+/* medidad relativas */
+
+.mitad {
+    font-size: 10px;
+    width: 50%;
+}
+
+h2 {
+    font-size: 12.5rem;
+    width: 50%;
+    border: 1px solid red;
+}
+
+/* rem es una unidad de relativa dependiendo del raíz (body, por defecto 16px) */
+/* es una unidad relativa correspondiente al elemento padre */

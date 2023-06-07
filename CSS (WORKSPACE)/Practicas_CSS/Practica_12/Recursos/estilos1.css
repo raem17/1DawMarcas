@@ -1,0 +1,54 @@
+/* Todos los p */
+p {
+    color: red;
+}
+
+/*  p con clase "par" */
+p.par {
+    color: blue;
+}
+
+/* todos los enlaces */
+a {
+    color: green;
+}
+
+/* elemento con id "destacado" */
+#destacado {
+    color: black;
+}
+
+/* todos los a dentro del id "destacado" */
+#destacado a{
+    color: black;
+}
+
+/* todas las listas */
+li {
+    color: blue;
+}
+
+/* todas las listas hijas de ol (ordenadas) */
+ol > li {
+    color: green;
+}
+
+/* todos los a hijos de li (todos los enlaces dentro de una lista) */
+li > a {
+    color: red;
+}
+
+/* todas las listas hijas de ol (ordenadas), otra vez */
+ol > li {
+    color: green;
+}
+
+/* todas las listas hijas de ol de segundo nivel (ordenadas) */
+ol > li > ol > li{
+    color: yellow;
+}
+
+/* selector universal */
+* {
+    font-weight:bold;
+}

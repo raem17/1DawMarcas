@@ -1,0 +1,43 @@
+/* Poner siempre este reset en cualquier css para evitar problemas de tamaño */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f9f8fc;
+    
+}
+
+nav {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #092327;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    padding: 20px;
+}
+
+li {
+    margin: 19.6px 0px;
+    display: inline-block;
+}
+
+/* Pseudoclases */
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    background-color: #ef8354;
+}

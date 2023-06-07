@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F4F9;
+}
+
+main {   
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    border-radius: 10px;
+    margin-top: 4rem;
+    width: 20%;
+    height: 330px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column
+}
+
+a:link, a:visited {
+    margin: 0.25rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}
+
+.login-link {
+    background-color: #018DDD;
+    color: white;
+}
+
+.signup-link {
+    border: 1px solid #018DDD;
+    background-color: white;
+    color: #018DDD;
+}

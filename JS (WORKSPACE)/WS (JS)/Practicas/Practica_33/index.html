@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Formulario THE LAST para los máquinas.">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script -->
+    <script defer src="script.js"></script>
+    <!-- Title -->
+    <title>THE LAST</title>
+</head>
+<body>
+    <main id="myMain">
+        <!-- Form -->
+        <form action="#" name="finalForm" method="get" id="finalForm">
+            <!-- Div .top -->
+            <div class="top">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="email" name="correo" id="correo" placeholder="Correo">
+
+                <div class="radio-group">
+                    <input type="radio" name="sexo" id="hombre" value="hombre"/>
+                    <label for="hombre">Hombre</label>
+    
+                    <input type="radio" name="sexo" id="mujer" value="mujer" />
+                    <label for="mujer">Mujer</label>
+                </div>
+            </div>
+
+            <!-- Div.TyC necesario para centrado perfecto -->
+            <div class="TyC">
+                <input type="radio" name="TyC" id="TyC" value="Sí">
+                <label for="TyC">Acepto Términos y Condiciones</label>
+            </div>
+
+            <!-- Esto se mostrará si algún campo no es válido -->
+            <ul id="ulList" class="noError">
+                <li id="liNombre" class="noError">Por favor completa el nombre.</li>
+                <li id="liCorreo" class="noError">Por favor completa el correo.</li>
+                <li id="liSex" class="noError">Por favor selecciona el sexo.</li>
+                <li id="liTyC" class="noError">Por favor acepta los Términos y Condiciones.</li>
+            </ul>
+
+            <input class="btn" type="submit" value="Registrarse">
+
+        </form>
+    </main>
+</body>
+</html>

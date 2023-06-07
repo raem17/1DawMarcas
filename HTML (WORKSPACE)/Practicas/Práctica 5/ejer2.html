@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Description para SEO -->
+    <meta name="description" content="Descripción de mi web, 150 caracteres no más">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Recursos/favicon.ico" type="image/x-icon">
+    <!-- Título -->
+    <title>HTML | Práctica 5 | Ejercicio 2</title>
+</head>
+
+<body>
+
+    <!-- Formulario -->
+    <form action="https://ptsv2.com/t/xj64a-1664958867/post" method="post">
+
+        <!-- Fieldset de datos personales -->
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <!-- input email -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" autocomplete="off" required>
+            </div>
+
+            <!-- input password -->
+            <div>
+                <label for="pw">Contraseña:</label>
+                <input type="password" name="pw" id="pw" required>
+            </div>
+
+            <!-- input password -->
+            <div>
+                <label for="repeat_pw">Repetir contraseña:</label>
+                <input type="password" name="repeat_pw" id="repeat_pw" required>
+            </div>
+
+            <!-- input text -->
+            <div>
+                <label for="firstname">Nombre:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Nombre" autocomplete="off" required>
+            </div>
+
+            <div>
+                <label for="lastname">Apellidos:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Apellidos" autocomplete="off" required>
+            </div>
+
+            <!-- input text -->
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Dirección" autocomplete="off" required>
+            </div>
+
+        </fieldset>
+
+        <!-- Fieldset de newsletter -->
+        <fieldset>
+            <legend>Newsletter</legend>
+
+            <!-- input checkbox -->
+            <div>
+                <input type="checkbox" name="nLetter" id="nLetter_1" value="Deseo recibir Newsletter">
+                <label for="nLetter_1">Deseo recibir Newsletter</label>
+            </div>
+
+        </fieldset>
+
+        <!-- Fieldset de politica de privacidad -->
+        <fieldset>
+            <legend>Politica de privacidad</legend>
+
+            <!-- input checkbox -->
+            <div>
+                <input type="radio" name="acuerdoPrivacidad" id="acuerdoPrivacidad" value="acuerdoPrivacidad_Si"
+                    required>
+                <label for="acuerdoPrivacidad">Acepto la política de privacidad</label>
+            </div>
+
+        </fieldset>
+
+        <br>
+        <!-- Botón enviar -->
+        <button submit>Enviar</button>
+
+    </form>
+</body>
+
+</html>

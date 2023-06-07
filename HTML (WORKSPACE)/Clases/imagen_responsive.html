@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./Recursos/favicon.ico" type="image/x-icon">
+    <title>Aprendiedo HTML | Imágenes Responsive</title>
+</head>
+<body>
+
+    <p>Hola soy un párrafo</p>
+
+    <img 
+    srcset="./Recursos/imagenes/arbol_small.jpg 640w,
+    ./Recursos/imagenes/arbol_mid.jpg 1920w,
+    ./Recursos/imagenes/arbol_big.jpg 5760w"
+    sizes="(max-width: 400px) 300px, (max-width: 1200px) 1000px, (max-width: 2000px) 3000 px"
+
+    src="./Recursos/imagenes/arbol.jpg" 
+    alt="Árbol milenario de color marrón."
+    >
+
+</body>
+</html>

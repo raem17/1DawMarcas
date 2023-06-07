@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2EFEF;
+    padding: 3rem;
+    max-width: 1100px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 100px 100px 1fr 100px 100px 100px;
+}
+
+header, nav, article, aside, div, footer {
+    background: #FFED92;
+    padding: 1rem;
+    border: 1px solid orange;
+}
+
+li {
+    display: block;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+/* media queries */
+
+/* Para tablet */
+@media screen and (min-width: 768px) {
+    body {
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "aside article"
+        "ad footer"
+        ;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    .main-nav {
+        grid-area: nav;
+    }
+
+    .side {
+        grid-area: aside;
+    }
+
+    .content {
+        grid-area: article;
+    }
+
+    .ad {
+        grid-area: ad;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+/* Escritorios */
+@media screen and (min-width: 1024px) {
+    body {
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+        "header header header"
+        "nav article aside"
+        "nav article ad"
+        "footer footer footer"
+        ;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+}

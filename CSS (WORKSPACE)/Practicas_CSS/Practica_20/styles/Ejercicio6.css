@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    margin-top: 2rem;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    margin-bottom: 2.5rem;
+}
+
+.profile-name {
+    margin-bottom: 0.3rem;
+}
+
+.profile-role {
+    margin-bottom: 1rem;
+    color: #787678dc;
+}
+
+/* 1er article */
+section > .profile:first-child {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+}
+
+/* Div del 1er article */
+section > .profile:first-child > div {
+    margin-left: 1rem;
+}
+
+/* Para los demás article (el 2º) */
+.profile {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+/* Ídem para los div */
+div {
+    margin-right: 1rem;
+}
+
+img {
+    height: 120px;
+    width: 200px;
+    object-fit: cover;
+}

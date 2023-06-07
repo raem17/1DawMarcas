@@ -1,0 +1,23 @@
+/* Poner siempre este reset en cualquier css para evitar problemas de tamaño */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja {
+    background-color: aqua;
+    color: #fff;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: orange;
+    padding: 10px;
+    width: 300px;
+}
+
+.caja2 {
+    background-color: aqua;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px dashed violet;
+}

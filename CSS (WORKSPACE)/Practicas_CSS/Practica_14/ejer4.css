@@ -1,0 +1,17 @@
+* {
+    font-size: 0.95em;
+    font-family: Arial, Helvetica;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 160%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 + p {
+    font-weight: bold;
+}

@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #256CEC;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+    background-color: #BFDBFE;
+    padding: 0.5rem 0.85rem;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #F1F5F9;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    padding: 1rem 3rem;
+}
+
+.card {
+    margin-top: 1rem;
+    border-radius: 8px;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+    max-width: 16rem;
+    background-color: white;
+    padding: 2.5rem 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Description para SEO -->
+    <meta name="description" content="Descripción de mi web, 150 caracteres no más">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Recursos/favicon.ico" type="image/x-icon">
+    <!-- Título -->
+    <title>HTML | Práctica 6 | Ejercicio 1</title>
+</head>
+
+<body>
+
+    <!-- Título h2 -->
+    <h2>Rellena tu CV</h2>
+    <!-- Formulario -->
+    <form action="mailto:empresax@gmail.com" method="post" enctype="multipart/form-data">
+
+        <!-- input text -->
+        <div>
+            <label for="firstname">Nombre</label> <br>
+            <input type="text" name="firstname" id="firstname" autocomplete="off" maxlength="30" required>
+        </div>
+
+        <div>
+            <label for="lastname">Apellidos</label> <br>
+            <input type="text" name="lastname" id="lastname" autocomplete="off" maxlength="80" required>
+        </div>
+
+        <!-- input password -->
+        <div>
+            <label for="pw">Contraseña</label> <br>
+            <input type="password" name="pw" id="pw" maxlength="10" required>
+        </div>
+
+        <!-- input dni -->
+        <div>
+            <label for="dni">DNI</label> <br>
+            <input type="text" name="dni" id="dni" autocomplete="off" pattern="[0-9]{8}[A-Z]{1}" required>
+        </div>
+
+        <!-- input radio -->
+        <div>
+            <label for="sexo">Sexo</label>
+            <br>
+            <input type="radio" name="sexo" id="sexo" value="Hombre">
+            <label for="sexo">Hombre</label>
+            <br>
+            <input type="radio" name="sexo" id="sexo" value="Mujer">
+            <label for="sexo">Mujer</label>
+        </div>
+
+        <br>
+
+        <!-- input file -->
+        <div>
+            <label for="foto">Incluir mi foto:</label>
+            <input type="file" name="foto" id="foto">
+        </div>
+
+        <br>
+
+        <!-- input checkbox -->
+        <div>
+            <input type="checkbox" name="nLetter" id="nLetter" value="Sí" checked>
+            <label for="nLetter">Suscribirme al boletín de novedades</label>
+        </div>
+
+        <br>
+        <!-- Botón enviar -->
+        <button type="submit">Guardar cambios</button>
+        <button type="reset">Borrar los datos introducidos</button>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Description para SEO -->
+    <meta name="description" content="Descripción de mi web, 150 caracteres no más">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Recursos/favicon.ico" type="image/x-icon">
+    <!-- Título -->
+    <title>HTML | Práctica 6 | Ejercicio 2</title>
+</head>
+
+<body>
+
+    <!-- Formulario -->
+    <form action="https://ptsv2.com/t/5eb53-1665331557/post" method="post">
+
+        <!-- Fieldset de datos personales -->
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <!-- input text -->
+            <div>
+                <label for="firstname">Nombre</label><br>
+                <input type="text" name="firstname" id="firstname" autocomplete="off" maxlength="20" required>
+            </div>
+
+            <div>
+                <label for="lastname">Apellidos</label> <br>
+                <input type="text" name="lastname" id="lastname" autocomplete="off" maxlength="90" required>
+            </div>
+
+            <!-- dni -->
+            <div>
+                <label for="dni">DNI</label> <br>
+                <input type="text" name="dni" id="dni" autocomplete="off" pattern="[0-9]{8}[A-Z]{1}"
+                    required>
+            </div>
+
+        </fieldset>
+
+        <!-- Fieldset de datos de conexión -->
+        <fieldset>
+            <legend>Datos de conexión</legend>
+
+            <!-- input email -->
+            <div>
+                <label for="username">Nombre de usuario</label><br>
+                <input type="email" name="username" id="username" autocomplete="off" maxlength="20" required>
+            </div>
+
+            <!-- input password -->
+            <div>
+                <label for="pw">Contraseña</label> <br>
+                <input type="password" name="pw" id="pw" autocomplete="off" maxlength="10" required>
+            </div>
+
+            <!-- input password -->
+            <div>
+                <label for="pw_repeat">Repite la contraseña</label> <br>
+                <input type="password" name="pw_repeat" id="pw_repeat" autocomplete="off" maxlength="10" required>
+            </div>
+
+        </fieldset>
+
+        <br>
+        <!-- Botón enviar -->
+        <button submit>Enviar</button>
+
+    </form>
+    
+</body>
+
+</html>

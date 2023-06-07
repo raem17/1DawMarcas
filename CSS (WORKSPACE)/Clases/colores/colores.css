@@ -1,0 +1,13 @@
+.caja {
+    background-color:rgb(32 33 36);
+    width: 200px;
+    height: 200px;
+}
+
+/* se pueden poner colores de varias formas: */
+/* eligiendo el nombre del color*/
+/* rgb decimal (de 0 a 255) */
+/* rgba, 'a' toma valores entre 0 y 1 */
+/* rgb hexadeciaml, dos dígitos por cada valor, del 0 a f, precedido de # */
+/* hsl (tono, saturación y luminosidad) de 0 a 360, saturación y luminosidad por porcentajes*/
+/* hsla que añade alfa para la transferencia */

@@ -1,0 +1,36 @@
+section {
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+}
+
+div.color-container {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 0 #888888;
+}
+
+.btn {
+    color: white;
+    margin: 0 2rem;
+    padding: 0.4rem 0;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    background-color: #1982FE;
+    box-shadow: 0 0 10px 0 #888888;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #1878e5;
+}

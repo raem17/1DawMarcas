@@ -1,0 +1,23 @@
+div :first-child {
+    color: red;
+}
+
+#b ::first-line {
+    color: blue;
+}
+
+#b ::first-letter {
+    color: black;
+}
+
+a {
+    color: green;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:focus {
+    background-color: blue;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Description para SEO -->
+    <meta name="description" content="Descripción de mi web, 150 caracteres no más">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Recursos/favicon.ico" type="image/x-icon">
+    <!-- Título -->
+    <title>HTML | Práctica 6 | Ejercicio 3</title>
+</head>
+
+<body>
+
+    <!-- Título h2 -->
+    <h2>Información sobre el producto</h2>
+    <!-- Formulario -->
+    <form action="https://ptsv2.com/t/od1eu-1665337238/post" method="post" enctype="multipart/form-data">
+
+        <!-- Fieldset de datos básicos -->
+        <fieldset>
+            <legend>Datos básicos</legend>
+
+            <!-- input text con size 55 -->
+            <div>
+                <label for="firstname">Nombre</label>
+                <br>
+                <input type="text" name="firstname" id="firstname" autocomplete="off" size="55">
+            </div>
+            <br>
+
+            <!-- textarea de descripción -->
+            <div>
+                <label for="descripcion">Descripción</label>
+                <br>
+                <textarea name="descripcion" id="descripcion" cols="40" rows="5"></textarea>
+            </div>
+            <br>
+
+            <!-- input file -->
+            <div>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto">
+            </div>
+            <br>
+
+            <!-- input checkbox -->
+            <div>
+                <input type="checkbox" name="contador_visitas" id="contador_visitas" value="Sí">
+                <label for="contador_visitas">Añadir contador de visitas</label>
+            </div>
+
+        </fieldset>
+
+        <!-- Fieldset de datos económicos -->
+        <fieldset>
+            <legend>Datos económicos</legend>
+
+            <!-- input text -->
+            <div>
+                <label for="precio">Precio</label>
+                <input type="text" name="precio" id="precio" autocomplete="off" size="5"> <span>€</span>
+            </div>
+            <br>
+
+            <!-- Select impuestos -->
+            <div>
+                <label for="impuestos">Impuestos</label>
+                <select name="impuestos" id="impuestos">
+                    <option value="0%">0%</option>
+                    <option value="1%">1%</option>
+                    <option value="2%">2%</option>
+                    <option value="3%">3%</option>
+                    <option value="4%" selected>4%</option>
+                </select>
+            </div>
+            <br>
+
+            <!-- input radio -->
+            <div>
+                <label for="promocion">Promoción</label>
+                <br>
+
+                <input type="radio" name="promocion" id="promocion" value="Ninguno">
+                <label for="promocion">Ninguno</label>
+                <br>
+
+                <input type="radio" name="promocion" id="promocion" value="Transporte_gratuito">
+                <label for="promocion">Transporte gratuito</label>
+                <br>
+
+                <input type="radio" name="promocion" id="promocion" value="descuento_5%">
+                <label for="promocion">Descuento 5%</label>
+            </div>
+
+        </fieldset>
+
+        <br>
+        <!-- Botón enviar -->
+        <button submit>Enviar</button>
+
+    </form>
+
+</body>
+
+</html>

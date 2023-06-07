@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Description para SEO -->
+    <meta name="description" content="Descripción de mi web, 150 caracteres no más">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Recursos/style.css">
+    <!-- Título -->
+    <title>Práctica 9_3</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <head>
+        <h1>Formulario de suscripción a la revista Corazón</h1>
+    </head>
+
+    <!-- Main -->
+    <main>
+        <article>
+            <!-- Form -->
+            <form action="mailto:empresax@gmail.com" method="post">
+
+                <!-- Fieldset de datos personañes -->
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <!-- Nombre -->
+                    <div>
+                        <label for="firstname">Nombre:</label> <br>
+                        <input type="text" name="firstname" id="firstname" placeholder="Nombre" autocomplete="off"
+                            maxlength="100" required>
+                    </div>
+                    <br>
+
+                    <!-- Apellidos -->
+                    <div>
+                        <label for="lastname">Apellidos:</label> <br>
+                        <input type="text" name="lastname" id="lastname" placeholder="Apellidos" autocomplete="off"
+                            maxlength="100" required>
+                    </div>
+                    <br>
+
+                    <!-- Dirección -->
+                    <div>
+                        <label for="address">Dirección postal:</label> <br>
+                        <input type="text" name="address" id="address" placeholder="Dirección postal" autocomplete="off"
+                            maxlength="100" required>
+                    </div>
+                </fieldset>
+                <br>
+
+                <!-- Fieldset de otros datos -->
+                <fieldset>
+                    <legend>Otros datos</legend>
+
+                    <!-- Nº de ejemplares -->
+                    <div>
+                        <label for="n_ejemplares">Número de ejemplares:</label> <br>
+                        <input type="number" name="n_ejemplares" id="n_ejemplares" placeholder="0" min="1" max="10">
+                    </div>
+                    <br>
+
+                    <!-- select suscripción -->
+                    <div>
+                        <label for="suscripcion">Tipo de suscripción:</label> <br>
+                        <select name="suscripcion" id="suscripcion">
+                            <option value="mensual">Mensual</option>
+                            <option value="trimestral">Trimestral</option>
+                            <option value="anual">Anual</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <!-- radio forma de pago -->
+                    <div>
+                        <label for="forma_de_pago">Forma de pago:</label>
+                        <br>
+
+                        <input type="radio" name="forma_de_pago" id="tarjeta" value="tarjeta">
+                        <label for="tarjeta">Tarjeta de débito o crédito</label>
+                        <br>
+
+                        <input type="radio" name="forma_de_pago" id="transferencia" value="transferencia">
+                        <label for="transferencia">Transferencia bancaria</label>
+                        <br>
+
+                        <input type="radio" name="forma_de_pago" id="paypal" value="paypal">
+                        <label for="paypal">PayPal</label>
+                    </div>
+                </fieldset>
+                <br>
+
+                <!-- Botón enviar -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar campos</button>
+
+            </form>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+</body>
+
+</html>

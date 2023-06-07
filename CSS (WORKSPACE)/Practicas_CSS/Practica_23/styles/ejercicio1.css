@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3F424B;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: #67E7EF;
+}
+
+p {
+    color: whitesmoke;
+}
+
+.contenedor {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}

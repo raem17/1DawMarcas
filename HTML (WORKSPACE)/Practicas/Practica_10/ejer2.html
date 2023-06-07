@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Description para SEO -->
+    <meta name="description" content="Descripción de mi web, 150 caracteres no más">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Recursos/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Recursos/style.css">
+    <!-- Título -->
+    <title>Práctica 10_2</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>Queen</h1>
+        <p>Grupo de rock británico</p>
+        <div>
+            <!-- imagen con enlace -->
+            <a href="https://www.queenonline.com/" target="_blank" rel="noopener noreferrer">
+                <img srcset="./Recursos/small.jpg 640w,
+                ./Recursos/med.jpg 1280w,
+                ./Recursos/big.jpg 2160w"
+                sizes="(max-width: 400px) 300px, (max-width: 1200px) 800px, 2000px"
+                src="Recursos/queen.jpg" alt="grupo_de_rock_queen" title="Haz click aquí">
+            </a>
+        </div>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Section 1 -->
+        <section>
+            <h2>Integrantes del grupo</h2>
+
+            <ul>
+                <li> <a href="https://es.wikipedia.org/wiki/Brian_May" target="_blank" rel="noopener noreferrer">Brian May</a></li>
+                <li> <a href="https://es.wikipedia.org/wiki/Freddie_Mercury" target="_blank" rel="noopener noreferrer">Freddie Mercury</a></li>
+                <li> <a href="https://es.wikipedia.org/wiki/John_Deacon" target="_blank" rel="noopener noreferrer">John Deacon</a></li>
+                <li> <a href="https://es.wikipedia.org/wiki/Roger_Taylor" target="_blank" rel="noopener noreferrer">Roger Taylor</a></li>
+            </ul>
+        </section>
+
+        <!-- Section 2 -->
+        <section>
+            <h2>Discografía</h2>
+            <p>Grandes Éxitos de Queen</p>
+            
+            <!-- Tabla -->
+            <table border="1">
+
+                <tr>
+                    <th>Año</th>
+                    <th>Disco</th>
+                </tr>
+
+                <tr>
+                    <td>1975</td>
+                    <td>A Night at the Opera</td>
+                </tr>
+
+                <tr>
+                    <td>1986</td>
+                    <td>A Kind of Magic</td>
+                </tr>
+
+                <tr>
+                    <td>1989</td>
+                    <td>The Miracle</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">"A Kind of Magic" Fue el álbum más exitoso</td>
+                </tr>
+
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Deja un mensaje</h2>
+
+        <form action="" method="post">
+
+            <!-- nombre -->
+            <div>
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" autocomplete="off">
+            </div>
+            <br>
+
+            <!-- email -->
+            <div>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="email" id="email" autocomplete="off">
+            </div>
+            <br>
+
+            <!-- textarea -->
+            <div>
+                <label for="feedback">Deja tus comentarios aquí:</label>
+                <br>
+                <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
+            </div>
+            <br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+
+</body>
+
+</html>

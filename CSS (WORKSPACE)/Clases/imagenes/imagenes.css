@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    /* quitamos el scroll horizontal */
+    max-width: 100%;
+    /* cogemos el ancho de referencia para el alto */
+    height: auto;
+    display: block;
+    /* nos va a servir para centrar la imagen */
+    margin: 0 auto;
+}
+
+section {
+    text-align: center;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Description para SEO -->
+    <meta name="description" content="Descripción de mi web, 150 caracteres no más">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Recursos/favicon.ico" type="image/x-icon">
+    <!-- Título -->
+    <title>HTML | Práctica 5 | Ejercicio 3</title>
+</head>
+
+<body>
+
+    <!-- Formulario con enctype adecuado -->
+    <form action="https://ptsv2.com/t/xj64a-1664958867/post" method="post" enctype="multipart/form-data">
+
+        <!-- Fieldset de datos personales -->
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <!-- input TEXT nombre -->
+            <div>
+                <label for="username">Nombre:</label>
+                <input type="text" name="username" id="username" placeholder="Nombre" autocomplete="off" required>
+            </div>
+
+            <!-- email -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+            </div>
+
+            <!-- dni -->
+            <div>
+                <label for="dni">DNI:</label>
+                <input type="text" name="dni" id="dni" placeholder="DNI" autocomplete="off" pattern="[0-9]{8}[A-Z]{1}"
+                    required>
+            </div>
+
+            <!-- input file -->
+            <div>
+                <label for="cv">Adjunte su CV:</label>
+                <input type="file" name="cv" id="cv" required>
+            </div>
+
+            <!-- input date -->
+            <div>
+                <label for="fecha_entrevista">Indique una fecha para la entrevista:</label>
+                <input type="date" name="fecha_entrevista" id="fecha_entrevista" required>
+            </div>
+
+        </fieldset>
+
+        <!-- Fieldset de experiencia laboral -->
+        <fieldset>
+            <legend>Experiencia laboral</legend>
+
+            <!-- input checkbox -->
+            <input type="checkbox" name="empresa" id="empresa_1" value="Deloitte">
+            <label for="empresa_1">Deloitte</label>
+
+            <input type="checkbox" name="empresa" id="empresa_2" value="Everis">
+            <label for="empresa_2">Everis</label>
+
+            <input type="checkbox" name="empresa" id="empresa_3" value="Accenture">
+            <label for="empresa_3">Accenture</label>
+
+            <input type="checkbox" name="empresa" id="empresa_4" value="Telefónica">
+            <label for="empresa_4">Telefónica</label>
+
+            <input type="checkbox" name="empresa" id="empresa_5" value="Otras">
+            <label for="empresa_5">Otras</label>
+
+        </fieldset>
+
+        <!-- Fieldset de salario -->
+        <fieldset>
+            <legend>Salario</legend>
+
+            <!-- input number con rango -->
+            <div>
+                <label for="salario">Introduza un rango de 0 a 50.000:</label>
+                <input type="number" name="salario" id="salario" min="0" max="50000">
+            </div>
+
+        </fieldset>
+
+        <!-- Fieldset de ubicaciones de trabajo -->
+        <fieldset>
+            <legend>Ubicaciones de trabajo</legend>
+
+            <!-- input checkbox -->
+            <input type="checkbox" name="ciudad" id="ciudad_1" value="Madrid">
+            <label for="ciudad_1">Madrid</label>
+
+            <input type="checkbox" name="ciudad" id="ciudad_2" value="Barcelona">
+            <label for="ciudad_2">Barcelona</label>
+
+            <input type="checkbox" name="ciudad" id="ciudad_3" value="Sevilla">
+            <label for="ciudad_3">Sevilla</label>
+
+            <input type="checkbox" name="ciudad" id="ciudad_4" value="Valencia">
+            <label for="ciudad_4">Valencia</label>
+
+            <input type="checkbox" name="ciudad" id="ciudad_5" value="Bilbao">
+            <label for="ciudad_5">Bilbao</label>
+
+            <input type="checkbox" name="ciudad" id="ciudad_6" value="Otras">
+            <label for="ciudad_6">Otras</label>
+
+        </fieldset>
+
+        <!-- Fieldset de primer trabajo -->
+        <fieldset>
+            <legend>Primer trabajo de desarrollador de software:</legend>
+
+            <input type="radio" name="primer_trabajo" id="si" value="Sí">
+            <label for="si">Sí</label>
+
+            <input type="radio" name="primer_trabajo" id="no" value="No">
+            <label for="no">No</label>
+
+        </fieldset>
+
+        <!-- Fieldset de caja de comentarios -->
+        <fieldset>
+            <legend>Caja de comentarios y sugerencias</legend>
+
+            <!-- textarea de comentarios -->
+            <textarea name="comentarios" id="comentarios" cols="40" rows="5"
+                placeholder="Introduce tus comentarios"></textarea>
+
+        </fieldset>
+
+        <br>
+        <!-- Botón enviar -->
+        <button submit>Enviar</button>
+
+    </form>
+
+</body>
+
+</html>
