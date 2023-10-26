@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    margin-top: 5.3rem;
+}
+
+h2 {
+    color: #0f386d;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+}
+
+.form-floating > h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.form-floating .form-control {
+    padding: 1rem;
+    border: none;
+}
+
+.form-floating textarea {
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+footer {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+/* Iconos */
+
+svg {
+    width: 45%;
+    height: auto;
+    color: #f2f2f2;
+}
+
+.icon-container {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 1.25rem;
+    border-radius: 3rem;
+    /* bg-c por defecto */
+    background-color: #cbcbcb;
+    /* flex para centrado perfecto de iconos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container.twitter {
+    background-color: #1da1f2;
+}
+
+.icon-container.instagram {
+    background-color: #833ab4;
+}
+
+.icon-container.facebook {
+    background-color: #1877f2;
+}
+
+/* media queries */
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0 1.5rem;
+    }
+}
